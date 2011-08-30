@@ -15,5 +15,8 @@ $(document).ready(function() {
 });
 
 $(function() {
-	$("ul.navi").tabs("div#slides > div.slide", {effect: 'slide'});
+	$("ul.navi").tabs("div#slides > div.slide", {
+	  effect: 'fade',
+	  fadeInSpeed: 1000,
+	  });
 });
