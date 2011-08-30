@@ -1,0 +1,355 @@
+@import url('reset.css');
+/*-----------------------------------------------------------------------------
+Angelina Allen's Portfolio
+
+version:   1.0
+author:    Angelina Allen
+email:     angelina@angelinaallen.com
+website:   http://angelinaallen.com
+-----------------------------------------------------------------------------*/
+
+/* Remove border around linked images */
+a img {
+  border: 0;
+}
+
+#wrapper {
+	width: 1280px;
+	margin: 0 auto;
+	background-color: #1f2422;
+	margin-top: 30px;
+}
+
+body {
+	font-family: Verdana, sans-serif;
+	background: #171a1a url(../images/body.png) top center repeat-y;
+
+}
+
+#mast-head,
+#mast-slideshow,
+#mast-content {
+	width: 1280px;
+	margin: 0 auto;
+}
+
+#mast-head {
+	border-bottom: 1px solid #484949;
+
+}
+
+#mast-slideshow {
+	border-top: 1px solid #000;
+	border-bottom: 1px solid #484949;
+	background: #171b19 url(../images/pattern.png) no-repeat left;
+}
+
+#mast-content {
+	border-top: 1px solid #000;
+}
+
+/*-----------------------------------------------------------------------------
+Header
+-----------------------------------------------------------------------------*/
+
+#header {
+	/*border-bottom: 1px solid rgba(192,192,192,0.36);*/
+	padding-bottom: 20px;
+	width: 1140px;
+	margin: 0 auto;
+}
+
+h1 a {
+	background: url(../images/logo.png) top left no-repeat;
+	height: 60px;
+	width: 156px;
+	text-decoration: none;
+	text-indent: -9999px;
+	display: block;
+}
+/*-----------------------------------------------------------------------------
+Slideshow
+-----------------------------------------------------------------------------*/
+
+#slideshow {
+	/*border-top: 1px solid #000;
+	border-bottom: 1px solid #000;*/
+	width: 1140px;
+	margin: 0 auto;
+	padding-top: 40px;
+	height: 360px;
+	position:relative;
+	overflow:hidden;
+
+}
+
+#nav {
+	float: left;
+	margin-left: 102px;
+	margin-top: 25px;
+}
+
+#nav a{
+	font: italic bold 80px "gill sans";
+	color: #def7fe;
+	line-height: 100px;
+	text-decoration: none;
+}
+
+#nav a:hover{
+	text-decoration: underline;
+}
+/*-----------------------------------------------------------------------------
+Slides
+-----------------------------------------------------------------------------*/
+
+#slides {
+	float: left;
+	margin-left: 576px;
+	margin-top: 25px;
+	position: absolute;
+	width: 2000em;
+}
+
+.slide {
+	width: 440px;
+	height: 235px;
+	background: #131716;
+	border: 5px solid #000;
+	float: left;
+	margin-right: 332px;
+}
+
+#welcome {
+	font: 80px/70px gill sans;
+	color: #ece96a;
+	padding: 30px 10px 10px 30px;
+	}
+	
+#about {
+	font: 24px gill sans;
+	color: #ece96a;
+	padding: 30px 20px 10px 30px;
+}
+/*-----------------------------------------------------------------------------
+Form
+-----------------------------------------------------------------------------*/
+
+#form {
+	color: #ece96a;
+	padding: 30px 10px 10px 30px;
+}
+
+form {
+	border: none;
+}
+
+label {
+	text-indent: -9999px;
+	display: block;
+}
+
+input {
+	background-color: #000;
+	color: #ece96a;
+	font: 12px Verdana, sans-serif;
+	border: none;
+}
+
+textarea {
+	background-color: #000;
+	color: #ece96a;
+	font: 12px Verdana, sans-serif;
+	border: none;
+
+}
+
+#submit {
+	background-color: #ece96a;
+	color: #000;
+	font: 12px Verdana, sans-serif;
+	
+}
+
+#links {
+	font: italic bold 18px "gill sans";
+	margin-top: -220px;
+	padding-left: 50 px;;
+	float: right;
+	}
+	
+#links ul{
+	width: 250px;
+}
+
+#links ul li a{
+	text-decoration: none;
+	margin: 5px;
+	float: left;
+	color: #000;
+}
+
+#links ul li a:hover{
+	opacity: 0.7;
+}
+
+#email_link {
+	background: #efec6a;
+	height: 32px;
+	width: 61px;
+	margin: 10px;
+	float: left;
+}
+
+#resume {
+	background: #d3ebf1;
+	height: 32px;
+	width: 77px;
+	margin: 10px;
+	float: left;
+}
+
+#vcard {
+	background: #efec6a;
+	height: 32px;
+	width: 63px;
+	margin: 10px;
+	float: left;
+}
+
+#twitter {
+	background: #d3ebf1;
+	height: 32px;
+	width: 75px;
+	margin: 10px;
+	float: left;
+}
+
+#linkedin {
+	background: #efec6a;
+	height: 32px;
+	width: 86px;
+	margin: 10px;
+	float: left;
+}
+
+#google {
+	background: #d3ebf1;
+	height: 32px;
+	width: 85px;
+	margin: 10px;
+	float: left;
+}
+/*-----------------------------------------------------------------------------
+Projects
+-----------------------------------------------------------------------------*/
+
+#content{
+	/*border-top: 1px solid rgba(192,192,192,0.36);*/
+	width: 1140px;
+	margin: 0 auto;
+
+}
+
+.project {
+	width: 1140px;
+	margin-top: 80px;
+	overflow: hidden;
+}
+
+.project_info {
+	width: 1124px;
+	height: 120px;
+	padding: 30px 0;
+	border: 8px solid #000;
+}
+/*-----------------------------------------------------------------------------
+Projects titles
+-----------------------------------------------------------------------------*/
+.project_name {
+	margin-left: 45px;
+	font: bold 48px "gill sans";
+	color: #efec6a;
+	text-shadow: #000 0 0 5px;
+	width: 400px;
+	float: left;
+}
+
+#streetcar {
+	font-size: 40px;
+}
+
+#wp_theme {
+	font-size: 37px;
+}
+
+/*-----------------------------------------------------------------------------
+Projects classes
+-----------------------------------------------------------------------------*/
+.project_about {
+	float: left;
+	font: bold 14px/20px "gill sans";
+	color: #efec6a;
+	text-shadow: #000 0 0 5px;
+	width: 360px;
+}
+
+.role {
+	float: left;
+	margin-left: 55px;
+	padding-bottom: 5px;
+	font: 20px verdana;
+	color: #efec6a;
+	text-shadow: #000 0 0 5px;
+
+}
+
+.role_about {
+	float: left;
+	margin-left: 55px;
+	font: italic 14px/20px "gill sans";
+	color: #efec6a;
+	text-shadow: #000 0 0 5px;
+	width: 200px;
+
+}
+/*-----------------------------------------------------------------------------
+Projects images
+-----------------------------------------------------------------------------*/
+.project_images {
+	width: 1140px;
+	margin-top: 50px;
+}
+
+.project_images ul li {
+	padding-bottom: 40px;
+}
+ 
+.col1 {
+	float: left;
+	width: 720px;
+}
+
+.col2 {
+	float: left;
+	margin-left: 63px;
+	width: 350px;
+}
+
+#footer {
+	clear: both;
+	
+	height: 80px;
+	background: #171b19 url(../images/footer.png) no-repeat left;
+	margin-bottom: 50px;
+	text-align: center;
+	border-top: 1px solid #484949;
+	border-bottom: 1px solid #484949;
+}
+
+#footer p{
+	color: #efec6a;
+	font-family: verdana, "sans sarif";
+	padding-top: 30px;
+	
+}
