@@ -1,4 +1,5 @@
 @import url('reset.css');
+
 /*-----------------------------------------------------------------------------
 Angelina Allen's Portfolio
 
@@ -9,8 +10,9 @@ website:   http://angelinaallen.com
 -----------------------------------------------------------------------------*/
 
 /* Remove border around linked images */
+
 a img {
-  border: 0;
+	border: 0;
 }
 
 #wrapper {
@@ -23,7 +25,6 @@ a img {
 body {
 	font-family: Verdana, sans-serif;
 	background: #171a1a url(../images/body.png) top center repeat-y;
-
 }
 
 #mast-head,
@@ -35,7 +36,6 @@ body {
 
 #mast-head {
 	border-bottom: 1px solid #484949;
-
 }
 
 #mast-slideshow {
@@ -53,7 +53,6 @@ Header
 -----------------------------------------------------------------------------*/
 
 #header {
-	/*border-bottom: 1px solid rgba(192,192,192,0.36);*/
 	padding-bottom: 20px;
 	width: 1140px;
 	margin: 0 auto;
@@ -67,20 +66,18 @@ h1 a {
 	text-indent: -9999px;
 	display: block;
 }
+
 /*-----------------------------------------------------------------------------
 Slideshow
 -----------------------------------------------------------------------------*/
 
 #slideshow {
-	/*border-top: 1px solid #000;
-	border-bottom: 1px solid #000;*/
 	width: 1140px;
 	margin: 0 auto;
 	padding-top: 40px;
 	height: 360px;
-	position:relative;
-	overflow:hidden;
-
+	position: relative;
+	overflow: hidden;
 }
 
 #nav {
@@ -89,16 +86,17 @@ Slideshow
 	margin-top: 25px;
 }
 
-#nav a{
+#nav a {
 	font: italic bold 80px "gill sans";
 	color: #def7fe;
 	line-height: 100px;
 	text-decoration: none;
 }
 
-#nav a:hover{
+#nav a:hover {
 	text-decoration: underline;
 }
+
 /*-----------------------------------------------------------------------------
 Slides
 -----------------------------------------------------------------------------*/
@@ -124,13 +122,14 @@ Slides
 	font: 80px/70px gill sans;
 	color: #ece96a;
 	padding: 30px 10px 10px 30px;
-	}
-	
+}
+
 #about {
 	font: 24px gill sans;
 	color: #ece96a;
 	padding: 30px 20px 10px 30px;
 }
+
 /*-----------------------------------------------------------------------------
 Form
 -----------------------------------------------------------------------------*/
@@ -161,35 +160,33 @@ textarea {
 	color: #ece96a;
 	font: 12px Verdana, sans-serif;
 	border: none;
-
 }
 
 #submit {
 	background-color: #ece96a;
 	color: #000;
 	font: 12px Verdana, sans-serif;
-	
 }
 
 #links {
 	font: italic bold 18px "gill sans";
 	margin-top: -220px;
-	padding-left: 50 px;;
+	padding-left: 50 px;
 	float: right;
-	}
-	
-#links ul{
+}
+
+#links ul {
 	width: 250px;
 }
 
-#links ul li a{
+#links ul li a {
 	text-decoration: none;
 	margin: 5px;
 	float: left;
 	color: #000;
 }
 
-#links ul li a:hover{
+#links ul li a:hover {
 	opacity: 0.7;
 }
 
@@ -240,15 +237,14 @@ textarea {
 	margin: 10px;
 	float: left;
 }
+
 /*-----------------------------------------------------------------------------
 Projects
 -----------------------------------------------------------------------------*/
 
-#content{
-	/*border-top: 1px solid rgba(192,192,192,0.36);*/
+#content {
 	width: 1140px;
 	margin: 0 auto;
-
 }
 
 .project {
@@ -263,9 +259,11 @@ Projects
 	padding: 30px 0;
 	border: 8px solid #000;
 }
+
 /*-----------------------------------------------------------------------------
 Projects titles
 -----------------------------------------------------------------------------*/
+
 .project_name {
 	margin-left: 45px;
 	font: bold 48px "gill sans";
@@ -286,6 +284,7 @@ Projects titles
 /*-----------------------------------------------------------------------------
 Projects classes
 -----------------------------------------------------------------------------*/
+
 .project_about {
 	float: left;
 	font: bold 14px/20px "gill sans";
@@ -301,7 +300,6 @@ Projects classes
 	font: 20px verdana;
 	color: #efec6a;
 	text-shadow: #000 0 0 5px;
-
 }
 
 .role_about {
@@ -311,11 +309,12 @@ Projects classes
 	color: #efec6a;
 	text-shadow: #000 0 0 5px;
 	width: 200px;
-
 }
+
 /*-----------------------------------------------------------------------------
 Projects images
 -----------------------------------------------------------------------------*/
+
 .project_images {
 	width: 1140px;
 	margin-top: 50px;
@@ -324,7 +323,7 @@ Projects images
 .project_images ul li {
 	padding-bottom: 40px;
 }
- 
+
 .col1 {
 	float: left;
 	width: 720px;
@@ -338,7 +337,6 @@ Projects images
 
 #footer {
 	clear: both;
-	
 	height: 80px;
 	background: #171b19 url(../images/footer.png) no-repeat left;
 	margin-bottom: 50px;
@@ -347,9 +345,8 @@ Projects images
 	border-bottom: 1px solid #484949;
 }
 
-#footer p{
+#footer p {
 	color: #efec6a;
 	font-family: verdana, "sans sarif";
 	padding-top: 30px;
-	
 }
