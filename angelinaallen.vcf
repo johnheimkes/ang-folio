@@ -1,0 +1,10 @@
+BEGIN:VCARD
+VERSION:3.0
+N:name;Angelina Allen;;;
+FN:Angelina Allen name
+TITLE:Web and Graphic Designer
+EMAIL;type=INTERNET;type=WORK;type=pref:hello@angelinaallen.com
+EMAIL;type=INTERNET;type=WORK:angelina@angelinaallen.com
+URL;type=HOME;type=pref:http\://www.angelinaallen.com
+X-ABUID:D3CB27BF-4519-4384-81BC-2035FDD6D744\:ABPerson
+END:VCARD

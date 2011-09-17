@@ -20,3 +20,10 @@ $(function() {
 	  fadeInSpeed: 1000,
 	  });
 });
+
+$(function() {
+
+	// prosses slides
+	$(".scrollable").scrollable();
+
+});
