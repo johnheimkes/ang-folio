@@ -9,44 +9,44 @@ Version: 1.0
 
 @font-face {
     font-family: 'mergeblack';
-    src: url('merge_black-webfont.eot');
-    src: url('merge_black-webfont.eot?#iefix') format('embedded-opentype'),
-         url('merge_black-webfont.woff') format('woff'),
-         url('merge_black-webfont.ttf') format('truetype'),
-         url('merge_black-webfont.svg#mergeblack') format('svg');
+    src: url('../fonts/merge_black-webfont.eot');
+    src: url('../fonts/merge_black-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/merge_black-webfont.woff') format('woff'),
+         url('../fonts/merge_black-webfont.ttf') format('truetype'),
+         url('../fonts/merge_black-webfont.svg#mergeblack') format('svg');
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
     font-family: 'mergebold';
-    src: url('merge_bold-webfont.eot');
-    src: url('merge_bold-webfont.eot?#iefix') format('embedded-opentype'),
-         url('merge_bold-webfont.woff') format('woff'),
-         url('merge_bold-webfont.ttf') format('truetype'),
-         url('merge_bold-webfont.svg#mergebold') format('svg');
+    src: url('../fonts/merge_bold-webfont.eot');
+    src: url('../fonts/merge_bold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/merge_bold-webfont.woff') format('woff'),
+         url('../fonts/merge_bold-webfont.ttf') format('truetype'),
+         url('../fonts/merge_bold-webfont.svg#mergebold') format('svg');
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
     font-family: 'mergelight';
-    src: url('merge_light-webfont.eot');
-    src: url('merge_light-webfont.eot?#iefix') format('embedded-opentype'),
-         url('merge_light-webfont.woff') format('woff'),
-         url('merge_light-webfont.ttf') format('truetype'),
-         url('merge_light-webfont.svg#mergelight') format('svg');
+    src: url('../fonts/merge_light-webfont.eot');
+    src: url('../fonts/merge_light-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/merge_light-webfont.woff') format('woff'),
+         url('../fonts/merge_light-webfont.ttf') format('truetype'),
+         url('../fonts/merge_light-webfont.svg#mergelight') format('svg');
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
     font-family: 'mergeregular';
-    src: url('merge_regular-webfont.eot');
-    src: url('merge_regular-webfont.eot?#iefix') format('embedded-opentype'),
-         url('merge_regular-webfont.woff') format('woff'),
-         url('merge_regular-webfont.ttf') format('truetype'),
-         url('merge_regular-webfont.svg#mergeregular') format('svg');
+    src: url('../fonts/merge_regular-webfont.eot');
+    src: url('../fonts/merge_regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/merge_regular-webfont.woff') format('woff'),
+         url('../fonts/merge_regular-webfont.ttf') format('truetype'),
+         url('../fonts/merge_regular-webfont.svg#mergeregular') format('svg');
     font-weight: normal;
     font-style: normal;
 }
@@ -113,7 +113,7 @@ Version: 1.0
 ------------------------------------------------------------------------ */
 body {
     background: #dddddd url('../images/rockywall.jpg') top left;
-    font: 14px/1.5 Helvetica, Arial, sans-serif;
+    font: 14px/1.5 'mergelight', Helvetica, Arial, sans-serif;
     color: #353534;
 }
 
@@ -150,6 +150,24 @@ body p { margin-bottom: 15px; }
 .hdg-4 { font-size: 10px; }
 
 .hdg-padded { padding: 20px 0; }
+
+.hdg-center { text-align: center; }
+
+.hdg-center-white:before,
+.hdg-center-white:after {
+    content: '';
+    width: 100%;
+    height: 2px;
+    background: #ffffff;
+}
+
+.hdg-center-salmon:before,
+.hdg-center-salmon:after {
+    content: '';
+    width: 100%;
+    height: 2px;
+    background: #e87061;
+}
 
 .mix-hdg-salmon { color: #e87061; }
 .mix-hdg-white { color: #ffffff; -moz-border-radius }

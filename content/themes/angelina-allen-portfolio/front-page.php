@@ -10,6 +10,6 @@
  */
 get_header(); ?>
 
-<?php get_template_part( 'loops/loop' ); ?>
+<?php get_template_part( 'loops/loop-home' ); ?>
 
 <?php get_footer();
