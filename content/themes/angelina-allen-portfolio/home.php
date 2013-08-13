@@ -1,9 +1,9 @@
 <?php
 /**
- * Nerdery Theme
+ * Portfolio Theme
  *
- * @category Nerdery_Skeleton_Theme
- * @package Nerdery_Skeleton_Theme
+ * @category Portfolio_Skeleton_Theme
+ * @package Portfolio_Skeleton_Theme
  * @subpackage Home
  * @author
  * @version $Id$

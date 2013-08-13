@@ -1,6 +1,6 @@
 <?php
 /**
- * Nerdery Theme
+ * Portfolio Theme
  *
  * @package Functions
  * @author     John Heimkes IV <john@markupisart.com>
@@ -68,11 +68,11 @@ class PORT_Theme
         /**
          * Includes
          */
-        include_once 'modules/register-post-types.php';
-        include_once 'modules/register-taxonomies.php';
-        include_once 'modules/register-menus.php';
-        include_once 'modules/register-sidebars.php';
-        include_once 'modules/gallery.php';
+        include_once 'functions/register-post-types.php';
+        include_once 'functions/register-taxonomies.php';
+        include_once 'functions/register-menus.php';
+        include_once 'functions/register-sidebars.php';
+        include_once 'functions/gallery.php';
     }
 
     /**
@@ -85,7 +85,7 @@ class PORT_Theme
         /**
          * Widgets
          */
-        include_once 'widgets/skeleton-widget.php';
+        // include_once 'widgets/skeleton-widget.php';
     }
 
     /**
@@ -96,7 +96,7 @@ class PORT_Theme
     public static function widget_init()
     {
         // register all the widgets
-        register_widget('Nerdery_Skeleton_Widget');
+        // register_widget('Portfolio_Skeleton_Widget');
     }
 
     /**
