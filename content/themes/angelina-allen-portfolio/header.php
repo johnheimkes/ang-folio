@@ -31,12 +31,20 @@
 <body <?php body_class(); ?>>
     <div class="wrapper-header">
         <header class="page-header">
-            <div class="grid-col sgrid-col-3">
+            <div class="fleft">
                 <h1 class="hdg hdg-1">Angelina Allen</h1>
                 <h2 class="hdg hdg-2"><?php bloginfo( 'tagline' ); ?></h2>
             </div>
             
-            
-            <?php wp_nav_menu(array('theme_location' => 'primary')); ?>
+            <div class="fright">
+                <?php wp_nav_menu(array(
+                        'theme_location' => 'primary',
+                        'container'      => 'nav',
+                    )); 
+                ?>
+            </div>
         </header>
     </div>
+    
+    <div class="wrapper-content">
+        <div class="page-content">

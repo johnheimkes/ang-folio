@@ -9,7 +9,14 @@
  * @version 1.0
  */
 ?>
-     </div>
+        </div>
+    </div>
+    
+    <div class="wrapper-footer">
+        <footer class="footer">
+            
+        </footer>
+    </div>
 <?php wp_footer(); ?>
 </body>
 </html>

@@ -127,9 +127,9 @@ img {
     height: auto;
 }
 
-body p {
-    margin-bottom: 15px;
-}
+body p { margin-bottom: 15px; }
+
+.offscreen { text-indent: -9999px; }
 
 /* ---------------------------------------------------------------------
  Headings
@@ -140,31 +140,28 @@ body p {
     color: #e24936;
 }
 
-.hdg-cap {
-    text-transform: uppercase;
-}
-
-.hdg-bold {
-    font-weight: bold;
-}
-
+.hdg-cap { text-transform: uppercase; }
+.hdg-bold { font-weight: bold; }
 .hdg-inline { display: inline-block; }
 
-.hdg-1 {
-    font-size: 33px;
-}
+.hdg-1 { font-size: 33px; }
+.hdg-2 { font-size: 18px; }
+.hdg-3 { font-size: 14px; }
+.hdg-4 { font-size: 10px; }
 
-.hdg-2 {
-    font-size: 18px;
-}
-
-.hdg-3 {
-    font-size: 14px;
-}
-
-.hdg-padded {
-    padding: 20px 0;
-}
+.hdg-padded { padding: 20px 0; }
 
 .mix-hdg-salmon { color: #e87061; }
-.mix-hdg-white { color: #ffffff; -moz-border-radius}
+.mix-hdg-white { color: #ffffff; -moz-border-radius }
+
+/* ---------------------------------------------------------------------
+ Horizontal List
+------------------------------------------------------------------------ */
+
+.h-list {
+    overflow: hidden;
+}
+
+.h-list > * {
+    float: left;
+}
