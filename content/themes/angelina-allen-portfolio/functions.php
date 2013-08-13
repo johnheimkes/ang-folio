@@ -38,7 +38,6 @@ class PORT_Theme
     public static function after_setup_theme()
     {
         self::_includes();
-        self::_widgets();
 
         /**
          * Theme Supports
@@ -50,12 +49,13 @@ class PORT_Theme
         /**
          * Actions and filters
          */
-        add_action('widgets_init', array('PORT_Theme', 'widget_init'));
         add_action('wp_enqueue_scripts', array('PORT_Theme', 'enqueue_scripts'));
         add_action('wp_enqueue_scripts', array('PORT_Theme', 'enqueue_styles'));
-
-        // fix Home menu item
-        add_filter('wp_nav_menu_objects', array('PORT_Theme', 'home_menu_sandbox_fix') );
+        
+        /**
+         * Additional Image Sizes
+         */
+        add_image_size( 'work-featured', 922, 208, true);
     }
 
     /**
@@ -69,34 +69,6 @@ class PORT_Theme
          * Includes
          */
         include_once 'functions/register-post-types.php';
-        include_once 'functions/register-taxonomies.php';
-        include_once 'functions/register-menus.php';
-        include_once 'functions/register-sidebars.php';
-        include_once 'functions/gallery.php';
-    }
-
-    /**
-     * Includes for widget class files
-     *
-     * @return void
-     */
-    private static function _widgets()
-    {
-        /**
-         * Widgets
-         */
-        // include_once 'widgets/skeleton-widget.php';
-    }
-
-    /**
-     * Init Theme-specific Widgets
-     * see Widgets_API {@link http://goo.gl/B2H6y}
-     *
-     */
-    public static function widget_init()
-    {
-        // register all the widgets
-        // register_widget('Portfolio_Skeleton_Widget');
     }
 
     /**
@@ -162,7 +134,6 @@ class PORT_Theme
 
         // Conditional statements for IE stylesheets
         $wp_styles->add_data('portfolio-ie9', 'conditional', 'lte IE 9');
-        $wp_styles->add_data('portfolio-ie8', 'conditional', 'lte IE 8');
 
         // Queue the stylesheets. Note that because portfolio-screen was registered
         // with portfolio-wysiwyg as a dependency, it does not need to be enqueued here.

@@ -1,8 +1,54 @@
 /* ---------------------------------------------------------------------
-Author: John Heimkes IV
+Author: John Heimkes IV <john@markupisart.com>
+Version: 1.0
 ------------------------------------------------------------------------ */
-body {
-    background: #dddddd url('../images/rockywall.jpg') top left;
+
+/* ---------------------------------------------------------------------
+ Fonts
+------------------------------------------------------------------------ */
+
+@font-face {
+    font-family: 'mergeblack';
+    src: url('merge_black-webfont.eot');
+    src: url('merge_black-webfont.eot?#iefix') format('embedded-opentype'),
+         url('merge_black-webfont.woff') format('woff'),
+         url('merge_black-webfont.ttf') format('truetype'),
+         url('merge_black-webfont.svg#mergeblack') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'mergebold';
+    src: url('merge_bold-webfont.eot');
+    src: url('merge_bold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('merge_bold-webfont.woff') format('woff'),
+         url('merge_bold-webfont.ttf') format('truetype'),
+         url('merge_bold-webfont.svg#mergebold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'mergelight';
+    src: url('merge_light-webfont.eot');
+    src: url('merge_light-webfont.eot?#iefix') format('embedded-opentype'),
+         url('merge_light-webfont.woff') format('woff'),
+         url('merge_light-webfont.ttf') format('truetype'),
+         url('merge_light-webfont.svg#mergelight') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'mergeregular';
+    src: url('merge_regular-webfont.eot');
+    src: url('merge_regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('merge_regular-webfont.woff') format('woff'),
+         url('merge_regular-webfont.ttf') format('truetype'),
+         url('merge_regular-webfont.svg#mergeregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
 }
 
 /* ---------------------------------------------------------------------
@@ -65,3 +111,60 @@ body {
 /* ---------------------------------------------------------------------
  Base Styles
 ------------------------------------------------------------------------ */
+body {
+    background: #dddddd url('../images/rockywall.jpg') top left;
+    font: 14px/1.5 Helvetica, Arial, sans-serif;
+    color: #353534;
+}
+
+a:hover,
+a:focus {
+    text-decoration: underline;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+body p {
+    margin-bottom: 15px;
+}
+
+/* ---------------------------------------------------------------------
+ Headings
+------------------------------------------------------------------------ */
+
+.hdg {
+    line-height: 1;
+    color: #e24936;
+}
+
+.hdg-cap {
+    text-transform: uppercase;
+}
+
+.hdg-bold {
+    font-weight: bold;
+}
+
+.hdg-inline { display: inline-block; }
+
+.hdg-1 {
+    font-size: 33px;
+}
+
+.hdg-2 {
+    font-size: 18px;
+}
+
+.hdg-3 {
+    font-size: 14px;
+}
+
+.hdg-padded {
+    padding: 20px 0;
+}
+
+.mix-hdg-salmon { color: #e87061; }
+.mix-hdg-white { color: #ffffff; -moz-border-radius}
