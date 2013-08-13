@@ -1,34 +1,36 @@
 <?php
 /**
- * Nerdery Theme
+ * Portfolio Theme
  *
- * @category Nerdery_Skeleton_Theme
- * @package Nerdery_Skeleton_Theme
+ * @category Portfolio_Skeleton_Theme
+ * @package Portfolio_Skeleton_Theme
  * @subpackage Modules_Register_PostTypes
  * @author John Heimkes IV <john@markupisart.com>
- * @version $Id$
+ * @version 1.0
  */
 
 add_action('init', 'portfolio_register_post_types');
 function portfolio_register_post_types()
 {
-    // register your post-types here
-    /*
-     * @see register_post_type() http://codex.wordpress.org/Function_Reference/register_post_type
-     *
-     */
+    // Register Post-Types
     register_post_type(
-        'portfolio_carousel', // prefix your post-type
+        'portfolio_carousel',
         array(
             'labels' => array(
-                'name'          => 'Carousels', // plural name
-                'singular_name' => 'Carousel'
+                'name'          => 'Work',
+                'singular_name' => 'Work',
             ),
             'public' => true,
             'supports' => array(
                 'title',
+                'editor',
                 'thumbnail',
-            )
+                'author',
+                'revisions',
+                'post-formats',
+            ),
+            'has_archive' => true,
+            
         )
     );
 }

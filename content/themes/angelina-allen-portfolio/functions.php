@@ -13,7 +13,7 @@ add_action('after_setup_theme', array('PORT_Theme', 'after_setup_theme'));
  */
 define('PORTFOLIO_THEME_PATH_URL', get_template_directory_uri() . '/');
 define('PORTFOLIO_THEME_PATH', get_template_directory() . '/');
-define('PORTFOLIO_THEME_VER', '2.1');
+define('PORTFOLIO_THEME_VER', '2.0');
 define('PORTFOLIO_TEXT_DOMAIN', basename(dirname(__FILE__)));
 
 /**
