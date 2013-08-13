@@ -6,7 +6,7 @@
  * @package Portfolio_Skeleton_Theme
  * @subpackage Home
  * @author
- * @version $Id$
+ * @version 1.0
  */
 ?>
 

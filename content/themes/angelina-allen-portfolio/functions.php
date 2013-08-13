@@ -3,8 +3,8 @@
  * Portfolio Theme
  *
  * @package Functions
- * @author     John Heimkes IV <john@markupisart.com>
- * @version    $Id$
+ * @author  John Heimkes IV <john@markupisart.com>
+ * @version 1.0
  */
 
 add_action('after_setup_theme', array('PORT_Theme', 'after_setup_theme'));
@@ -151,55 +151,13 @@ class PORT_Theme
             'screen, projection'
         );
 
-        // IE 9 Stylesheet
-        wp_register_style(
-            'portfolio-ie9',
-            PORTFOLIO_THEME_PATH_URL . 'assets/styles/ie9.css',
-            array('portfolio-screen'),
-            PORTFOLIO_THEME_VER,
-            'screen, projection'
-        );
-
-        // IE 8 Stylesheet
-        wp_register_style(
-            'portfolio-ie8',
-            PORTFOLIO_THEME_PATH_URL . 'assets/styles/ie8.css',
-            array('portfolio-screen'),
-            PORTFOLIO_THEME_VER,
-            'screen, projection'
-        );
-
         // Repeat with Media Query stylesheets
         wp_register_style(
             'portfolio-screen-small',
-            PORTFOLIO_THEME_PATH_URL . 'assets/styles/screen_small.css',
+            PORTFOLIO_THEME_PATH_URL . 'assets/styles/screen-small.css',
             array('portfolio-screen'),
             PORTFOLIO_THEME_VER,
-            'screen and (min-width: 480px)'
-        );
-
-        wp_register_style(
-            'portfolio-screen-medium',
-            PORTFOLIO_THEME_PATH_URL . 'assets/styles/screen_medium.css',
-            array('portfolio-screen'),
-            PORTFOLIO_THEME_VER,
-            'screen and (min-width: 768px)'
-        );
-
-        wp_register_style(
-            'portfolio-screen-large',
-            PORTFOLIO_THEME_PATH_URL . 'assets/styles/screen_large.css',
-            array('portfolio-screen'),
-            PORTFOLIO_THEME_VER,
-            'screen and (min-width: 992px)'
-        );
-
-        wp_register_style(
-            'portfolio-screen-huge',
-            PORTFOLIO_THEME_PATH_URL . 'assets/styles/screen_large.css',
-            array('portfolio-screen'),
-            PORTFOLIO_THEME_VER,
-            'screen and (min-width: 1382px)'
+            'screen and (min-width: 767px)'
         );
 
         // Conditional statements for IE stylesheets
@@ -210,30 +168,7 @@ class PORT_Theme
         // with portfolio-wysiwyg as a dependency, it does not need to be enqueued here.
         wp_enqueue_style('portfolio-wysiwyg');
         wp_enqueue_style('portfolio-screen-small');
-        wp_enqueue_style('portfolio-screen-medium');
-        wp_enqueue_style('portfolio-screen-large');
-        wp_enqueue_style('portfolio-screen-huge');
-        wp_enqueue_style('portfolio-ie9');
-        wp_enqueue_style('portfolio-ie8');
 
     }
 
-    /**
-     * Home menu item sandbox fix. Sets the Home menu item to
-     * developer's sandbox instead of the DB value.
-     *
-     * @param array $menu_items Array of menu items
-     * @return array
-     */
-    public static function home_menu_sandbox_fix($menu_items)
-    {
-        foreach ($menu_items as $menu_item) {
-            if (isset($menu_item->title) && $menu_item->title == 'Home') {
-                $menu_item->url = home_url('/');
-                break; // no point in continuing loop, is there?
-            }
-        }
-
-        return $menu_items;
-    }
 }

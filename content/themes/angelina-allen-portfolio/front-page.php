@@ -6,7 +6,7 @@
  * @package Portfolio_Skeleton_Theme
  * @subpackage Home
  * @author John Heimkes IV <john@markupisart.com>
- * @version $Id$
+ * @version 1.0
  */
 get_header(); ?>
 

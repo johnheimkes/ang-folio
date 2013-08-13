@@ -6,7 +6,7 @@
  * @package Portfolio_Skeleton_Theme
  * @subpackage Single
  * @author
- * @version $Id$
+ * @version 1.0
  */
 ?>
 <?php get_header(); ?>
