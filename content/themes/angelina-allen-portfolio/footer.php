@@ -13,7 +13,7 @@
     </div>
     
     <div class="wrapper-footer">
-        <footer class="footer">
+        <footer class="page-footer">
             
         </footer>
     </div>

@@ -2,7 +2,52 @@
 Author: John Heimkes IV <john@markupisart.com>
 Version: 1.0
 ------------------------------------------------------------------------ */
-
+/* ---------------------------------------------------------------------
+ CSS Reset
+------------------------------------------------------------------------ */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
 /* ---------------------------------------------------------------------
  Fonts
 ------------------------------------------------------------------------ */
@@ -109,29 +154,6 @@ Version: 1.0
 .grid-row-s .grid-col-10 { width: 100%; }
 
 /* ---------------------------------------------------------------------
- Base Styles
------------------------------------------------------------------------- */
-body {
-    background: #dddddd url('../images/rockywall.jpg') top left;
-    font: 14px/1.5 'mergelight', Helvetica, Arial, sans-serif;
-    color: #353534;
-}
-
-a:hover,
-a:focus {
-    text-decoration: underline;
-}
-
-img {
-    max-width: 100%;
-    height: auto;
-}
-
-body p { margin-bottom: 15px; }
-
-.offscreen { text-indent: -9999px; }
-
-/* ---------------------------------------------------------------------
  Headings
 ------------------------------------------------------------------------ */
 
@@ -182,4 +204,96 @@ body p { margin-bottom: 15px; }
 
 .h-list > * {
     float: left;
+}
+
+/* ---------------------------------------------------------------------
+ Base Styles
+------------------------------------------------------------------------ */
+body {
+    background: #dddddd url('../images/rockywall.jpg') top left;
+    font: 14px/1.5 'mergelight', Helvetica, Arial, sans-serif;
+    color: #353534;
+}
+
+a:hover,
+a:focus {
+    text-decoration: underline;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+body p { margin-bottom: 15px; }
+
+.offscreen { text-indent: -9999px; }
+
+.fleft { float: left; }
+.fright { float: right; }
+
+.hidden { display: none; }
+
+.wrapper-header {
+    background: rgba(255, 255, 255, .6);
+    border-bottom: 2px solid #bebdba;
+}
+
+.wrapper-footer {
+    height: 22px;
+    background: rgba(255, 255, 255, .6);
+    border-top: 2px solid #bebdba;
+}
+
+.page-header,
+.page-content,
+.page-footer {
+    width: 920px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.page-header {
+    height: 160px;
+}
+
+.site-name {
+    margin-top: 50px;
+}
+
+.site-name > .hdg {
+    line-height: 1.2;
+}
+
+/* ---------------------------------------------------------------------
+ Work
+------------------------------------------------------------------------ */
+.work-wrapper {
+    height: 208px;
+    margin-bottom: 39px;
+    position: relative;
+}
+
+.work-wrapper > * { position: absolute; }
+
+.home .wp-post-image {
+    z-index: 1;
+}
+
+.work-wrapper:hover .bg-transparent {
+    width: 920px;
+    height: 208px;
+    background: rgba(232, 112, 97, .7);
+    top: 0;
+    left: 0;
+    z-index: 2;
+}
+
+.title-hover {
+    display: none;
+    z-index: 3;
+}
+
+.work-wrapper:hover .title-hover {
+    display: block;
 }

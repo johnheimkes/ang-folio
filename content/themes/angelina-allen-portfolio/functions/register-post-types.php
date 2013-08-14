@@ -14,7 +14,7 @@ function portfolio_register_post_types()
 {
     // Register Post-Types
     register_post_type(
-        'portfolio_carousel',
+        'portfolio_work',
         array(
             'labels' => array(
                 'name'          => 'Work',
@@ -30,7 +30,7 @@ function portfolio_register_post_types()
                 'post-formats',
             ),
             'has_archive' => true,
-            
+            'rewrite'     => array( 'slug' => 'work' )
         )
     );
 }

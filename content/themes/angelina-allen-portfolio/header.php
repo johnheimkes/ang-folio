@@ -31,12 +31,12 @@
 <body <?php body_class(); ?>>
     <div class="wrapper-header">
         <header class="page-header">
-            <div class="fleft">
+            <div class="site-name fleft">
                 <h1 class="hdg hdg-1">Angelina Allen</h1>
                 <h2 class="hdg hdg-2"><?php bloginfo( 'tagline' ); ?></h2>
             </div>
             
-            <div class="fright">
+            <div class="main-nav fright">
                 <?php wp_nav_menu(array(
                         'theme_location' => 'primary',
                         'container'      => 'nav',
