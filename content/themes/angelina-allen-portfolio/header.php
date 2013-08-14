@@ -33,13 +33,20 @@
         <header class="page-header">
             <div class="site-name fleft">
                 <h1 class="hdg hdg-1">Angelina Allen</h1>
-                <h2 class="hdg hdg-2"><?php bloginfo( 'tagline' ); ?></h2>
+                <h2 class="hdg hdg-2">User Experience Designer</h2>
+            </div>
+            
+            <div class="logo">
+                <a href="<?php echo home_url(); ?>">
+                    <img src="<?php echo PORTFOLIO_THEME_PATH_URL; ?>/assets/images/logo.png" alt="Angelina Allen's Logo" />
+                </a>
             </div>
             
             <div class="main-nav fright">
                 <?php wp_nav_menu(array(
-                        'theme_location' => 'primary',
-                        'container'      => 'nav',
+                        'menu'          => 'primary',
+                        'container'     => 'nav',
+                        'menu_class'    => 'h-list primary-nav'
                     )); 
                 ?>
             </div>
