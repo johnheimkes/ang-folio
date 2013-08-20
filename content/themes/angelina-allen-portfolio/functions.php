@@ -57,6 +57,8 @@ class PORT_Theme
          * Additional Image Sizes
          */
         add_image_size( 'work-featured', 922, 208, true);
+        add_image_size( 'profile-pic', 203, 208, true);
+        add_image_size( 'secondary-profile-pic', 699, 208, true);
     }
 
     /**
