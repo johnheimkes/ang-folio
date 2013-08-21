@@ -92,6 +92,10 @@ table {
     float: right;
 }
 
+.grid-col-middle {
+    margin: 0 auto;
+}
+
 .grid-col-right-single { margin-right: 20%; }
 
 .grid-col + .grid-col { margin-left: 2.291666666667%; } /* approx 20px margin on 960width  */
@@ -127,12 +131,13 @@ table {
 
 .hdg {
     line-height: 1;
-    color: #e24936;
+    color: absolute;
     font-weight: 300;
 }
 
 .hdg-cap { text-transform: uppercase; }
 .hdg-bold { font-weight: bold; }
+.hdg-italic { font-style: italic; }
 .hdg-inline { display: inline-block; }
 
 .hdg-1 { font-size: 33px; }
@@ -161,7 +166,9 @@ table {
 }
 
 .mix-hdg-salmon { color: #e87061; }
-.mix-hdg-white { color: #ffffff; -moz-border-radius }
+.mix-hdg-gray { color: #353534; }
+.mix-hdg-white { color: #ffffff; }
+.mix-hdg-border-salmon { border-bottom: 2px solid #e24936; }
 
 .page-title {
     margin-bottom: 50px;
@@ -346,6 +353,10 @@ body p { margin-bottom: 15px; }
 
 .title-hover {
     display: none;
+    text-align: center;
+    right: 0;
+    bottom: 0;
+    left: 0;
     z-index: 3;
 }
 
@@ -386,3 +397,12 @@ body p { margin-bottom: 15px; }
 .contact-linkedin {
     background: url('../images/icon-linkedin.png') center left no-repeat;
 }
+
+.random-image {
+    width: 223px;
+    height: 227px;
+}
+
+/* ---------------------------------------------------------------------
+ About
+------------------------------------------------------------------------ */

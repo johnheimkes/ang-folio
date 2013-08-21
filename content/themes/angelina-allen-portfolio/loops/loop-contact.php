@@ -30,7 +30,7 @@
                 </li>
             </ul>
             
-            <img class="fright" src="<?php the_field( 'random_pic' ); ?>" alt="An amazing cat gif." />
+            <img class="fright random-image" src="<?php the_field( 'random_pic' ); ?>" alt="An amazing cat gif." />
         </div>
     </div>
 
