@@ -163,17 +163,66 @@ table {
 .mix-hdg-salmon { color: #e87061; }
 .mix-hdg-white { color: #ffffff; -moz-border-radius }
 
+.page-title {
+    margin-bottom: 50px;
+}
+
 /* ---------------------------------------------------------------------
  Horizontal List
 ------------------------------------------------------------------------ */
 
 .h-list {
     overflow: hidden;
+    color: #e24936;
+    font-weight: 300;
 }
 
 .h-list > * {
     float: left;
 }
+
+/* ---------------------------------------------------------------------
+ Inputs
+------------------------------------------------------------------------ */
+.gform_wrapper {
+    overflow: hidden;
+}
+
+.gfield_label {
+    font-size: 18px;
+    color: #e24936;
+    font-weight: 300;
+}
+
+input,
+textarea {
+    width: 96%;
+    padding: 0 5px;
+    margin-bottom: 20px;
+    border: 2px solid #bebdba;
+    border-radius: 3px;
+    line-height: 2;
+    font-size: 18px;
+    color: #bebdba;
+    font-weight: 300;
+}
+
+textarea {
+    height: 110px;
+    resize: vertical;
+}
+
+.gform_button {
+    width: 143px;
+    float: right;
+    background: rgba(233, 113, 98, .6);
+    border: 2px solid #c63d2d;
+    border-radius: 3px;
+    color: #ffffff;
+    font-size: 16px;
+    text-transform: uppercase;
+}
+
 
 /* ---------------------------------------------------------------------
  Base Styles
@@ -217,7 +266,7 @@ body p { margin-bottom: 15px; }
 }
 
 .wrapper-footer {
-    height: 22px;
+    height: auto;
     background: rgba(255, 255, 255, .6);
     border-top: 2px solid #bebdba;
 }
@@ -307,3 +356,33 @@ body p { margin-bottom: 15px; }
 /* ---------------------------------------------------------------------
  Contact
 ------------------------------------------------------------------------ */
+.contact-list {
+    width: 30%;
+    text-align: right;
+}
+
+.contact-list-item {
+    margin-bottom: 20px;
+}
+
+.contact-link {
+    display: block;
+    height: 36px;
+    line-height: 2;
+}
+
+.contact-resume {
+    background: url('../images/icon-resume.png') center left no-repeat;
+}
+
+.contact-twitter {
+    background: url('../images/icon-twitter.png') center left no-repeat;
+}
+
+.contact-google {
+    background: url('../images/icon-google.png') center left no-repeat;
+}
+
+.contact-linkedin {
+    background: url('../images/icon-linkedin.png') center left no-repeat;
+}

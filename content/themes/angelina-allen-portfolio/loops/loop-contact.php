@@ -3,7 +3,7 @@
     <div <?php post_class( 'page-contact' ); ?>>
         <div class="hdg-flex">
             <div class="hdg-ribbon-left"></div>
-            <h2 class="hdg-1 hdg-center hdg-center-salmon mix-hdg-salmon"><?php the_title(); ?></h2>
+            <h2 class="hdg-1 hdg-center hdg-center-salmon mix-hdg-salmon page-title"><?php the_title(); ?></h2>
             <div class="hdg-ribbon-right"></div>
         </div>
         
@@ -14,23 +14,23 @@
         <div class="grid-col-right grid-col-6">
             <ul class="v-list contact-list fleft">
                 <li class="v-list-item contact-list-item">
-                    <a href="<?php the_field( 'resume_download_link' ); ?>" class="contact-link contact-resume">Resume</a>
+                    <a href="<?php the_field( 'resume_download_link' ); ?>" class="contact-link contact-resume hdg-2">Resume</a>
                 </li>
                 
                 <li class="v-list-item contact-list-item">
-                    <a href="<?php the_field( 'twitter_link' ); ?>" class="contact-link contact-twitter">Twitter</a>
+                    <a href="<?php the_field( 'twitter_link' ); ?>" class="contact-link contact-twitter hdg-2">Twitter</a>
                 </li>
                 
                 <li class="v-list-item contact-list-item">
-                    <a href="<?php the_field( 'google_link' ); ?>" class="contact-link contact-google">Google+</a>
+                    <a href="<?php the_field( 'google_link' ); ?>" class="contact-link contact-google hdg-2">Google+</a>
                 </li>
                 
                 <li class="v-list-item contact-list-item">
-                    <a href="<?php the_field( 'linkedin_link' ); ?>" class="contact-link contact-linkedin">LinkedIn</a>
+                    <a href="<?php the_field( 'linkedin_link' ); ?>" class="contact-link contact-linkedin hdg-2">LinkedIn</a>
                 </li>
             </ul>
             
-            <img src="<?php the_field( 'random_pic' ); ?>" alt="An amazing cat gif." />
+            <img class="fright" src="<?php the_field( 'random_pic' ); ?>" alt="An amazing cat gif." />
         </div>
     </div>
 
