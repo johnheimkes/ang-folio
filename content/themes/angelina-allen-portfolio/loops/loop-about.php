@@ -12,9 +12,9 @@ $size = "profile_pic";
     <div <?php post_class( 'page-about' ); ?>>
         <div class="grid-row">
             <div class="hdg-flex">
-                <div class="hdg-ribbon-left"></div>
-                <h2 class="hdg-1 hdg-center hdg-center-salmon mix-hdg-salmon page-title"><?php the_title(); ?></h2>
-                <div class="hdg-ribbon-right"></div>
+                <h2 class="hdg-1 hdg-center hdg-center-salmon mix-hdg-salmon page-title">
+                    <span class="mix-hdg-border-salmon"><?php the_title(); ?></span>
+                </h2>
             </div>
 
             <div class="profile-pic">
@@ -28,9 +28,9 @@ $size = "profile_pic";
         </div>
 
         <div class="hdg-flex">
-            <div class="hdg-ribbon-left"></div>
-            <h2 class="hdg-1 hdg-center hdg-center-salmon mix-hdg-salmon page-title">Resume</h2>
-            <div class="hdg-ribbon-right"></div>
+            <h2 class="hdg-1 hdg-center hdg-center-salmon mix-hdg-salmon page-title">
+                <span class="mix-hdg-border-salmon">Resume</span>
+            </h2>
         </div>
 
         <div class="grid-col grid-col-middle grid-col-10 mix-hdg-gra resume-wrapper">

@@ -20,17 +20,10 @@
     <link rel="pingback" href="<?php bloginfo('pingback_url') ?>" />
     
     <script type="text/javascript">
-    if (navigator.userAgent.match(/iPad/i)) {
-    var viewportmeta = document.querySelector('meta[name="viewport"]');
-    if (viewportmeta) {
-        viewportmeta.content = 'width=device-width, minimum-scale=1.0, initial-scale=1.0';
-        jQuery(document).ready(function() {
-            document.body.addEventListener('gesturestart', function () {
-                viewportmeta.content = 'width=device-width, minimum-scale=0.25';
-            }, false);
-        });
-    }
-    }
+        if(navigator.userAgent.match(/iPad/i)) {
+            viewport = document.querySelector("meta[name=viewport]");
+            viewport.setAttribute('content', 'width=980');
+        }
     </script>
 
     <!-- ICONS -->

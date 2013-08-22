@@ -144,6 +144,7 @@ table {
 .hdg-italic { font-style: italic; }
 .hdg-inline { display: inline-block; }
 
+.hdg-0 { font-size: 45px; }
 .hdg-1 { font-size: 33px; }
 .hdg-2 { font-size: 18px; }
 .hdg-3 { font-size: 14px; }
@@ -356,11 +357,15 @@ body p { margin-bottom: 15px; }
 }
 
 .title-hover {
-    text-align: center;
     right: 0;
-    bottom: 10px;
+    top: 69px;
     left: 0;
     z-index: 3;
+}
+
+.title-hover > span {
+    padding-bottom: 10px;
+    border-bottom: 3px solid #ffffff;
 }
 
 .work-wrapper .title-hover,

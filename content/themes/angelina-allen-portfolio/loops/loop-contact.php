@@ -2,9 +2,9 @@
 
     <div <?php post_class( 'page-contact' ); ?>>
         <div class="hdg-flex">
-            <div class="hdg-ribbon-left"></div>
-            <h2 class="hdg-1 hdg-center hdg-center-salmon mix-hdg-salmon page-title"><?php the_title(); ?></h2>
-            <div class="hdg-ribbon-right"></div>
+            <h2 class="hdg-1 hdg-center hdg-center-salmon mix-hdg-salmon page-title">
+                <span class="mix-hdg-border-salmon"><?php the_title(); ?></span>
+            </h2>
         </div>
         
         <div class="grid-col grid-col-5">
