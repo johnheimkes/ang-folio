@@ -14,10 +14,24 @@
 <head>
 
     <meta charset="<?php bloginfo( 'charset' ); ?>" />
-    <meta name="viewport" content="width=device-width" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     
     <title><?php bloginfo('name'); ?><?php wp_title(' - '); ?></title>
     <link rel="pingback" href="<?php bloginfo('pingback_url') ?>" />
+    
+    <script type="text/javascript">
+    if (navigator.userAgent.match(/iPad/i)) {
+    var viewportmeta = document.querySelector('meta[name="viewport"]');
+    if (viewportmeta) {
+        viewportmeta.content = 'width=device-width, minimum-scale=1.0, initial-scale=1.0';
+        jQuery(document).ready(function() {
+            document.body.addEventListener('gesturestart', function () {
+                viewportmeta.content = 'width=device-width, minimum-scale=0.25';
+            }, false);
+        });
+    }
+    }
+    </script>
 
     <!-- ICONS -->
     <link rel="shortcut icon" type="image/ico" href="<?php echo PORTFOLIO_THEME_PATH_URL; ?>assets/images/favicon.ico" />
