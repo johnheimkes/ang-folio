@@ -21,7 +21,6 @@
 
     <!-- ICONS -->
     <link rel="shortcut icon" type="image/ico" href="<?php echo PORTFOLIO_THEME_PATH_URL; ?>assets/images/favicon.ico" />
-    <link rel="apple-touch-icon" href="<?php echo PORTFOLIO_THEME_PATH_URL; ?>assets/images/apple-touch-icon.png" />
 
     <link rel="profile" href="http://gmpg.org/xfn/11" />
     <link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>" />
@@ -32,8 +31,8 @@
     <div class="wrapper-header">
         <header class="page-header">
             <div class="site-name fleft">
-                <h1 class="hdg hdg-1">Angelina Allen</h1>
-                <h2 class="hdg hdg-2">User Experience Designer</h2>
+                <h1 class="hdg hdg-1 mix-hdg-salmon">Angelina Allen</h1>
+                <h2 class="hdg hdg-2 mix-hdg-salmon">User Experience Designer</h2>
             </div>
             
             <div class="logo">

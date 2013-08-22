@@ -10,30 +10,32 @@ $size = "profile_pic";
 <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
 
     <div <?php post_class( 'page-about' ); ?>>
-        <div class="hdg-flex">
-            <div class="hdg-ribbon-left"></div>
-            <h2 class="hdg-1 hdg-center hdg-center-salmon mix-hdg-salmon page-title"><?php the_title(); ?></h2>
-            <div class="hdg-ribbon-right"></div>
+        <div class="grid-row">
+            <div class="hdg-flex">
+                <div class="hdg-ribbon-left"></div>
+                <h2 class="hdg-1 hdg-center hdg-center-salmon mix-hdg-salmon page-title"><?php the_title(); ?></h2>
+                <div class="hdg-ribbon-right"></div>
+            </div>
+
+            <div class="profile-pic">
+                <img class="fleft" src="<?php the_field( 'pic_profile' ); ?>" alt="" />
+                <img class="fright" src="<?php the_field( 'pic_secondary' ); ?>" alt="" />
+            </div>
+
+            <div class="grid-col grid-col-middle grid-col-10 about-statement">
+                <?php the_content(); ?>
+            </div>
         </div>
-        
-        <div class="grid-col">
-            <img src="<?php the_field( 'pic_profile' ); ?>" alt="" />
-            <img src="<?php the_field( 'pic_secondary' ); ?>" alt="" />
-        </div>
-        
-        <div class="grid-col grid-col-middle grid-col-10">
-            <?php the_content(); ?>
-        </div>
-        
+
         <div class="hdg-flex">
             <div class="hdg-ribbon-left"></div>
             <h2 class="hdg-1 hdg-center hdg-center-salmon mix-hdg-salmon page-title">Resume</h2>
             <div class="hdg-ribbon-right"></div>
         </div>
-        
-        <div class="grid-col grid-col-middle grid-col-10 mix-hdg-gray">
-            <h3 class="hdg-2 mix-hdg-salmon mix-hdg-border-salmon hdg-italic">Work Experience :</h3>
-            
+
+        <div class="grid-col grid-col-middle grid-col-10 mix-hdg-gra resume-wrapper">
+            <h3 class="hdg-2 mix-hdg-salmon mix-hdg-border-salmon hdg-italic hdg-inline">Work Experience :</h3>
+
             <?php if ( get_field( 'resume' ) ) : while ( has_sub_field( 'resume' ) ) : ?>
                 <div class="experience">
                     <h4 class="hdg-2 experience-title"><?php the_sub_field( 'job_title_company' ); ?></h4>
