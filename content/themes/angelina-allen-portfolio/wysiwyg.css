@@ -156,12 +156,10 @@ Author: John Heimkes IV
 
 .alignleft {
     float: left;
-    clear: left;
 }
 
 .alignright {
     float: right;
-    clear: right;
 }
 
 img.aligncenter,
