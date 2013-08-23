@@ -333,13 +333,14 @@ body p { margin-bottom: 15px; }
 /* ---------------------------------------------------------------------
  Work
 ------------------------------------------------------------------------ */
-.work-wrapper {
+.work-wrapper-link {
+    display: block;
     max-height: 208px;
     margin-bottom: 39px;
     position: relative;
 }
 
-.work-wrapper > * { position: absolute; }
+.work-wrapper-link > * { position: absolute; }
 
 .home .wp-post-image {
     z-index: 1;
