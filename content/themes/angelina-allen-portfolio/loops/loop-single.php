@@ -28,7 +28,7 @@
             
             <div class="grid-col grid-col-2">
                 <h3 class="hdg-2 mix-hdg-salmon mix-hdg-border-salmon hdg-italic">Link :</h3>
-                <p><?php the_field( 'link' ); ?></p>
+                <a href="<?php the_permalink(); ?>"><?php the_field( 'link' ); ?></a>
             </div>
             
             <div class="project-details cboth">
