@@ -10,7 +10,7 @@ $size = "profile_pic";
 <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
 
     <div <?php post_class( 'page-about' ); ?>>
-        <div class="grid-row">
+        <div class="grid-row wysiwyg">
             <div class="hdg-flex">
                 <h2 class="hdg-1 hdg-center hdg-center-salmon mix-hdg-salmon page-title">
                     <span class="mix-hdg-border-salmon"><?php the_title(); ?></span>
