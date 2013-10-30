@@ -1,11 +1,9 @@
 <?php
 
-$work_query = new WP_Query(array(
-    'posts_per_page' => -1,
-    'post_type'      => 'portfolio_work',
-));
+$posts = get_field( 'work_sorter' );
 
-if ( $work_query->have_posts() ) : while ( $work_query->have_posts() ) : $work_query->the_post(); ?>
+if ( $posts ) : foreach ( $posts as $post ) : setup_postdata($post);
+?>
 
     <div class="work-wrapper">
         <a class="work-wrapper-link" href="<?php the_permalink(); ?>">
@@ -17,4 +15,4 @@ if ( $work_query->have_posts() ) : while ( $work_query->have_posts() ) : $work_q
         </a>
     </div>
 
-<?php endwhile; endif; ?>
+<?php endforeach; endif; ?>

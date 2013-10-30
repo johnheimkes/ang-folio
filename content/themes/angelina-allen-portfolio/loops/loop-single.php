@@ -18,18 +18,22 @@
             </div>
             
             <div class="grid-col grid-col-2">&nbsp;</div>
-
-            <div class="grid-col grid-col-2">
-                <h3 class="hdg-2 mix-hdg-salmon mix-hdg-border-salmon hdg-italic">Service :</h3>
-                <p><?php the_field( 'service' ); ?></p>
-            </div>
             
-            <div class="grid-col grid-col-2">&nbsp;</div>
+            <?php if ( get_field( 'service' ) ) { ?>
+                <div class="grid-col grid-col-2">
+                    <h3 class="hdg-2 mix-hdg-salmon mix-hdg-border-salmon hdg-italic">Service :</h3>
+                    <p><?php the_field( 'service' ); ?></p>
+                </div>
             
-            <div class="grid-col grid-col-2">
-                <h3 class="hdg-2 mix-hdg-salmon mix-hdg-border-salmon hdg-italic">Link :</h3>
-                <a href="http://<?php the_field( 'link' ); ?>"><?php the_field( 'link' ); ?></a>
-            </div>
+                <div class="grid-col grid-col-2">&nbsp;</div>
+            <?php }
+            
+            if ( get_field( 'link' ) ) { ?>
+                <div class="grid-col grid-col-2">
+                    <h3 class="hdg-2 mix-hdg-salmon mix-hdg-border-salmon hdg-italic">Link :</h3>
+                    <a href="http://<?php the_field( 'link' ); ?>"><?php the_field( 'link' ); ?></a>
+                </div>
+            <?php } ?>
             
             <div class="project-details cboth">
                 <h3 class="hdg-2 mix-hdg-salmon mix-hdg-border-salmon hdg-italic hdg-inline">Project Details :</h3>

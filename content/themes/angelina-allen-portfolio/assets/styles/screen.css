@@ -244,7 +244,7 @@ textarea {
  Base Styles
 ------------------------------------------------------------------------ */
 body {
-    background: #dddddd url('../images/rockywall.jpg') top left;
+    background: #dddddd url('../images/rockywall.jpg') top left fixed;
     position: relative;
     font: 14px/1.5 'mergelight', Helvetica, Arial, sans-serif;
     color: #353534;
@@ -292,6 +292,8 @@ body p { margin-bottom: 15px; }
     position: relative;
 }
 
+.page-content { padding-bottom: 50px; }
+
 /*---------- Header ----------*/
 .page-header { height: 160px; }
 
@@ -335,6 +337,8 @@ body p { margin-bottom: 15px; }
 /* ---------------------------------------------------------------------
  Work
 ------------------------------------------------------------------------ */
+.work-wrapper { overflow: hidden; }
+
 .work-wrapper-link {
     display: block;
     max-height: 208px;
