@@ -44,6 +44,18 @@ $size = "profile_pic";
                 </div>
             <?php endwhile; endif; ?>
         </div>
+        
+        <div class="grid-col-middle grid-col-10 mix-hdg-gra resume-wrapper">
+            <h3 class="hdg-2 mix-hdg-salmon mix-hdg-border-salmon hdg-italic hdg-inline">Education :</h3>
+
+            <?php if ( get_field( 'education' ) ) : while ( has_sub_field( 'education' ) ) : ?>
+                <div class="experience">
+                    <h4 class="hdg-2 experience-title"><?php the_sub_field( 'school' ); ?></h4>
+                    <h5 class="hdg-3 experience-date"><?php the_sub_field( 'date_attended' ); ?></h5>
+                    <?php the_sub_field( 'education_description' ); ?>
+                </div>
+            <?php endwhile; endif; ?>
+        </div>
     </div>
 
 <?php endwhile; endif; ?>
